@@ -168,7 +168,7 @@
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
-    display: flex;
+    display: 
     justify-content: center;
     align-items: center;
     position: absolute;

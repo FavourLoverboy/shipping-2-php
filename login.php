@@ -1,14 +1,42 @@
 <?php include('includes/header.php');?>
+<?php
+    $_SESSION['errLogin'] = '';
+    if($_POST){
+        extract($_POST);
+        $tblquery = "SELECT * FROM admin WHERE username = :un AND password = :pw";
+        $tblvalue = array(
+            ':un' => htmlspecialchars($un),
+            ':pw' => htmlspecialchars($pw)
+        );
+        $login = $connect->tbl_select($tblquery, $tblvalue);
+        if($login){
+            foreach($login as $data){
+                extract($data);
+                $_SESSION['name'] = $name;
+                $_SESSION['username'] = $username;
+                
+                echo "<script>  window.location='admin/dashboard' </script>";
+                
+            }
+        }else{
+            $_SESSION['errLogin'] = "Invalid Login Credential";
+        }
+    }
 
+?>
 <div class="container-fluid login">
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4 login-box p-5">
-            <form>
+            <form method="POST">
                 <span class="title pb-5">Admin Login</span>
+                
+                <div class="text-danger pb-2">
+                    <?php echo $_SESSION['errLogin']; ?>
+                </div>
 
                 <div class="div mb-5">
-                    <input type="text" placeholder="Enter Admin Username">
+                    <input type="text" name="un" placeholder="Enter Admin Username" required>
                     <span class="focus"></span>
                     <span class="symbol">
                         <span class="inr"></span>
@@ -16,7 +44,7 @@
                 </div>
 
                 <div class="div mb-2">
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="pw" placeholder="Password" required>
                     <span class="focus"></span>
                     <span class="symbol">
                         <span class="inr2"></span>
