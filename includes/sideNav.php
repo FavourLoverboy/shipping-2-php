@@ -8,7 +8,7 @@
                 <p style="color: white;padding:5px;"><?php echo $_SESSION['name']; ?></p>
             </li>
             <li>
-                <a  href="admin" style="background-color: #00001a;"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                <a  href="admin/dashboard" style="background-color: #00001a;"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
             </li>
             <li>
                 <a href="admin">View Deliveries</a>
