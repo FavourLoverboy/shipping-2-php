@@ -33,9 +33,10 @@
 
 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link href="new_w3.css" rel="stylesheet"> -->
 </head>
 <body>
 

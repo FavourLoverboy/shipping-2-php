@@ -8,6 +8,6 @@
 <?php include('includes/header.php'); ?>
 
     <!-- Page Wrapper -->
-    <?php include($page); ?>
+    
 
 <?php include ('includes/footer.php'); ?>
