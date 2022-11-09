@@ -11,7 +11,7 @@
                 <a  href="admin/dashboard" style="background-color: #00001a;"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
             </li>
             <li>
-                <a href="admin">View Deliveries</a>
+                <a href="admin/dashboard">View Deliveries</a>
             </li>        
             <li>
                 <a onclick="sideBarDropDown()">Manage<span class="fa arrow"></span></a>
