@@ -4,7 +4,7 @@
 }
 
 /* ===== Login Styles ===== */
-/* .login{
+.login{
     width: 100%;  
     min-height: 100vh;
     display: -webkit-box;
@@ -249,7 +249,7 @@
 }
 .login-box form .div .symbol .inr2::before{
     content: "\e80f";
-} */
+}
 
 
 /* main styles */
