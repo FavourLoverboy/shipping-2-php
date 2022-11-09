@@ -622,4 +622,32 @@ p {
     MEDIA QUERIES     
     =============================================*/
    
-
+@media(min-width:768px) {
+    #page-wrapper{
+        margin: 0 0 0 260px;
+        padding: 15px 30px;
+        /* min-height: 1200px; */
+    }
+    .navbar-side {
+        z-index: 1;
+        position: absolute;
+        width: 260px;
+    }
+    .navbar {
+        border-radius: 0px; 
+    }
+}
+@media(max-width:768px) {
+    .laptop-topnav{
+        display: none;
+    }
+    .mobile-topnav{
+        display: block;
+    }
+    .sidebar-mobile{
+        display: none;
+    }
+    .sidebar-mobile.active{
+        display:block;
+    }
+}
