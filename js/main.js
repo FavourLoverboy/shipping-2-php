@@ -4,3 +4,7 @@ function sideBarDropDown(){
     sideBar.classList.toggle('active');
 }
 
+function mobileSideBarDropDown(){
+    let mobileSideBar = document.querySelector('.sidebar-mobile');
+    mobileSideBar.classList.toggle('active');
+}
