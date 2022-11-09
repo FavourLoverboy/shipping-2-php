@@ -5,8 +5,8 @@
     <div class="laptop-topnav" style="color: white; padding-right: 15px; float:right; font-size: 16px;">
         <a href="logout" class="btn btn-default square-btn-adjust bg-white">Logout</a>
     </div>
-    <div onclick="mobileSideBarDropDown()" class="mobile-topnav" style="color: white; padding-right: 15px; float:right; font-size: 16px;">
-        <button type="button">
+    <div onclick="mobileSideBarDropDown()" class="mobile-topnav" style="color: white; float:right; font-size: 16px; padding-right: 10px;">
+        <button type="button" class="btn btn-default square-btn-adjust bg-white p-1" style="width: 30px;">
             <span>
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </span>
