@@ -17,16 +17,16 @@
                 <a onclick="sideBarDropDown()">Manage<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="add_package">Add Package</a>
+                        <a href="admin/add_package">Add Package</a>
                     </li>
                     <li>
-                        <a href="track_package">Track Package</a>
+                        <a href="admin/track_package">Track Package</a>
                     </li>
                     <li>
-                        <a href="add_admin">Add admin</a>
+                        <a href="admin/add_admin">Add admin</a>
                     </li>
                     <li>
-                        <a href="send_message">Send Message</a>
+                        <a href="admin/send_message">Send Message</a>
                     </li>
                     <li>
                         <a href="logout">logout</a>

@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/new_w3.css">
 </head>
 <body>
 
