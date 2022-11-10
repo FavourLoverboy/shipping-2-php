@@ -24,6 +24,7 @@
     }
 
 ?>
+<title>Login | Rapid Parcel Express</title>
 <div class="container-fluid login">
     <div class="row">
         <div class="col-md-4"></div>

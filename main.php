@@ -11,6 +11,7 @@
     <div id="wrapper">
         <?php include('includes/topNav.php'); ?>
         <?php include('includes/sideNav.php'); ?>
+        <?php include('includes/title.php'); ?>
         <div id="page-wrapper">
             <div id="page-inner">
                 <?php include($page); ?>
