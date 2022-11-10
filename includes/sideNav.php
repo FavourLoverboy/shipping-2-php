@@ -26,9 +26,6 @@
                         <a href="admin/add_admin">Add admin</a>
                     </li>
                     <li>
-                        <a href="admin/send_message">Send Message</a>
-                    </li>
-                    <li>
                         <a href="logout">logout</a>
                     </li>
                 </ul>
