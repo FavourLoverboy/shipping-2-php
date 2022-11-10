@@ -20,3 +20,42 @@
         </br></br>
     </div>
 </div>
+
+<div class="panel-body">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover" >
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>shipping type</th>
+                    <th>status</th>
+                    <th>Sender</th>
+                    <th>Origin</th>
+                    <th>Sender phone</th>
+                    <th>Receiver</th>
+                    <th>Destination</th>
+                    <th>Receiver phone</th>
+                    <th>Send Date</th>
+                    <th>Item pic</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Box</td>
+                    <td>Air</td>
+                    <td>On transit</td>
+                    <td>Francis Lopez</td>
+                    <td>SYRIA</td>
+                    <td>None</td>
+                    <td>María Teresa Marrufo Núñez</td>
+                    <td>Av.  Los Próceres, Residencias Albarregas, Edif.  2, apto 4-72, Parroquia Spinetti Dini, Mcp.  Libertador Estado Mérida Venezuela</td>
+                    <td>04247000232</td>
+                    <td>2022-01-22</td>
+                    <td >
+                        <img src="assets/1.jpg" style='width:60px;'/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>           
+</div>
