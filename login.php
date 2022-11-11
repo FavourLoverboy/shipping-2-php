@@ -1,5 +1,30 @@
 <?php include('includes/header.php');?>
 <?php
+
+    // Setting
+    // Company Name
+    $tblquery = "SELECT * FROM setting WHERE type = :name";
+    $tblvalue = array(
+        ':name' => 'name'
+    );
+    $name = $connect->tbl_select($tblquery, $tblvalue);
+    foreach($name as $data){
+        extract($data);
+        $_SESSION['comName'] = $content; 
+    }
+
+    // Year
+    $tblquery = "SELECT * FROM setting WHERE type = :year";
+    $tblvalue = array(
+        ':year' => 'year'
+    );
+    $name = $connect->tbl_select($tblquery, $tblvalue);
+    foreach($name as $data){
+        extract($data);
+        $_SESSION['year'] = $content;     
+    }
+    // End of Setting
+
     $_SESSION['errLogin'] = '';
     if($_POST){
         extract($_POST);
@@ -24,7 +49,7 @@
     }
 
 ?>
-<title>Login | Rapid Parcel Express</title>
+<title>Login | <?php echo $_SESSION['comName']; ?></title>
 <div class="container-fluid login">
     <div class="row">
         <div class="col-md-4"></div>

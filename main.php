@@ -17,7 +17,7 @@
                 <?php include($page); ?>
                 <nav class="navbar navbar-default navbar-cls-top text-center" style="margin-top: 5%">
                     <div style="color:white;">
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> by Rapid Parcel Express. All Rights Reserved.
+                        <?php echo 'Copyright &copy;' . $_SESSION['year'] . ' by ' . $_SESSION['comName'] . '. All Rights Reserved.'; ?>
                     </div>
                 </nav>
             </div>

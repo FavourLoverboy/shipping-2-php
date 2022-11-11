@@ -1,7 +1,9 @@
 <div class="row">
     <div class="col-md-12">
         <h2>Admin Dashboard</h2>   
-        <h5 style="font-weight:normal;">Welcome Mr <?php echo $_SESSION['name']; ?>, Rapid Parcel Express, Love to see you back. </h5>
+        <h5 style="font-weight:normal;">
+            <?php echo 'Welcome Mr ' . $_SESSION['name'] . ', ' . $_SESSION['comName'] . ' Love to see you back.'; ?>
+        </h5>
     </div>
 </div>
 <hr />

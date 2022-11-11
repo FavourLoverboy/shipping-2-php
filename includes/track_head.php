@@ -1,3 +1,53 @@
+<?php 
+    include("config/dblink.php");
+    $connect = new DB();
+    session_start();
+
+    // Setting
+    // Company Name
+    $tblquery = "SELECT * FROM setting WHERE type = :name";
+    $tblvalue = array(
+        ':name' => 'name'
+    );
+    $name = $connect->tbl_select($tblquery, $tblvalue);
+    foreach($name as $data){
+        extract($data);
+        $_SESSION['comName'] = $content; 
+    }
+
+    // Company Email
+    $tblquery = "SELECT * FROM setting WHERE type = :email";
+    $tblvalue = array(
+        ':email' => 'email'
+    );
+    $name = $connect->tbl_select($tblquery, $tblvalue);
+    foreach($name as $data){
+        extract($data);
+        $_SESSION['comEmail'] = $content; 
+    }
+
+    // Company Logo
+    $tblquery = "SELECT * FROM setting WHERE type = :logo";
+    $tblvalue = array(
+        ':logo' => 'logo'
+    );
+    $name = $connect->tbl_select($tblquery, $tblvalue);
+    foreach($name as $data){
+        extract($data);
+        $_SESSION['comLogo'] = $content;
+    }
+
+    // Company External Link
+    $tblquery = "SELECT * FROM setting WHERE type = :eLink";
+    $tblvalue = array(
+        ':eLink' => 'eLink'
+    );
+    $name = $connect->tbl_select($tblquery, $tblvalue);
+    foreach($name as $data){
+        extract($data);
+        $_SESSION['comELink'] = $content;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -180,7 +230,7 @@
                             <ul class="d-flex account_login-area">
                                 <li>
                                     <i class="fa fa-envelope" aria-hidden="true"></i></i>
-                                    info@rapidparcelexpress.com
+                                    <?php echo $_SESSION['comEmail']; ?>
                                 </li>
                                 <li>
                                     <i class="fa fa-map" aria-hidden="true"></i></i>
@@ -217,7 +267,7 @@
                         <div class="col-lg-3 col-md-9 col-sm-9 col-9">
                             <div class="logo">
                                 <a href="home">
-                                    <img src="img/logo.png" alt="">
+                                    <img src="<?php echo $_SESSION['comLogo']; ?>" alt="Company Logo">
                                 </a>
                             </div>
                             <br>
@@ -227,19 +277,19 @@
                                 <nav class="nav_mobile_menu">
                                     <ul>
                                         <li class="">
-                                            <a href="home">Home</a> 
+                                            <a href="https://<?php echo $_SESSION['comELink']; ?>home">Home</a> 
                                         </li>
                                         <li class="active">
-                                            <a href="tracking">Tracking</a> 
+                                            <a href="https://portal.<?php echo $_SESSION['comELink']; ?>tracking">Tracking</a> 
                                         </li>
                                         <li>
-                                            <a href="about">About</a>
+                                            <a href="https://<?php echo $_SESSION['comELink']; ?>about">About</a>
                                         </li>
                                         <li >
-                                            <a href="service">Service</a> 
+                                            <a href="https://<?php echo $_SESSION['comELink']; ?>service">Service</a> 
                                         </li>
                                         <li>
-                                            <a href="contact">Contact</a>
+                                            <a href="https://<?php echo $_SESSION['comELink']; ?>contact">Contact</a>
                                         </li>
                                     </ul>
                                 </nav>
