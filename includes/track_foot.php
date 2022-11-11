@@ -24,5 +24,24 @@
             })();
         </script>
         <!--End of Tawk.to Script-->
+
+        <script type="text/javascript">
+            function move() {
+            var data = "100";
+            var elem = document.getElementById("myBar");
+            var width = 1;
+            var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= data) {
+                        clearInterval(id);
+                    } else {
+                        width++;
+                        elem.style.width = width + '%';
+                    }
+                }
+            }
+            window.setTimeout(move, 7000);
+        </script>
     </body> 
 </html> 
